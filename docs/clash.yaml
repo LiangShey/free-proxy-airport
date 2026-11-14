@@ -7,8 +7,18 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-14T16:15:32.378694+00:00'
+generated-at: '2026-11-14T20:51:16.067573+00:00'
 proxies:
+- type: vmess
+  name: 🇭🇰HK香港 (4)
+  server: dog-jp.kunlun01dns.com
+  port: 21016
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  cipher: auto
+  alterId: 0
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇭🇰 香港 | HKG 2
   server: 45.192.194.104
   port: 35600
@@ -22,25 +32,19 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇭🇰 香港 | HKG
-  server: 47.242.81.94
-  port: 52080
-  type: vmess
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /QQqun-737805443
-    headers:
-      Host:
-      - openai.com
+- name: 🇯🇵 日本 | JPN
+  server: zfapi.zalolink.com
+  port: 55688
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
 - name: 🇺🇸 美国 | USA 8
   server: 162.35.101.177
@@ -83,19 +87,6 @@ proxies:
     public-key: 7Q09Z_KU9vXvif4-pLfVc_Zwil-X4k41Iesv-HCk4wI
     short-id: 7f3d68ed44
   servername: ops.gx.nvidia.com
-  client-fingerprint: chrome
-  network: tcp
-  udp: true
-- name: 🇺🇸 美国 | USA 4
-  server: caudal-reason.freevideochats.org
-  port: 443
-  type: vless
-  uuid: 2c4a1725-5b9e-4759-a792-72c52f12967a
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: 6dc3iKXilOQpA_JFrKlk5-CsFjSmOm_5p0kSQcO9qi4
-  servername: challenge.worldoftanks.eu
   client-fingerprint: chrome
   network: tcp
   udp: true
@@ -149,6 +140,21 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
+- type: vless
+  name: 🇩🇪DE德国丨yoyapai.com (37)
+  server: 45.129.242.56
+  port: 443
+  uuid: ebdfaf99-41d8-4e48-8196-d54510ffb556
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: www.cloudflare.com
+  sni: www.cloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YURKlEQ3rap4KOXXGsVFZyYev2oDU2gCEbNTXPdKWRY
+    short-id: abcdef
 - type: ss
   name: 🇩🇪DE德国丨yoyapai.com
   server: 202.50.253.72
@@ -181,6 +187,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: false
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.27
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - type: vless
   name: 🇱🇻LV拉脱维亚丨yoyapai.com
   server: 193.163.203.170
@@ -196,13 +209,6 @@ proxies:
   reality-opts:
     public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
     short-id: b28db60d77c50b4f
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  udp: true
 - name: 🇩🇪 德国 | DEU 5
   server: 3.174.189.0
   port: 443
@@ -258,33 +264,6 @@ proxies:
     headers:
       Host: dcm4kwis2exkw.cloudfront.net
   udp: true
-- name: 🇳🇱 荷兰 | NLD 6
-  server: 96.62.224.129
-  port: 444
-  type: vless
-  uuid: cdf4bc13-31e6-4bff-962c-05fe9151c593
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: tEHL8oz8kXsEPy224pqQ0go5CkbDYRrDMG8DMfMrPSs
-    short-id: 45ba24f917ad1f12
-  servername: de1.vrsvpn.com
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: 🇫🇷 法国 | FRA
-  server: 200.102.183.226
-  port: 80
-  type: vless
-  uuid: 664f65f4-33b3-43a3-b9e5-68192d1d428e
-  tls: true
-  servername: 68r2nrw6avta71yq.cdn.cachefleet.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: qi8ws15c7jv5q2fa
-  udp: true
 - name: 🇹🇭 泰国 | THA
   server: assets.opensignal.com
   port: 80
@@ -327,6 +306,24 @@ proxies:
     grpc-mode: gun
     grpc-service-name: api
   udp: true
+- type: vless
+  name: ❓未知丨yoyapai.com (21)
+  server: dey.lnmarketplace.net
+  port: 443
+  uuid: 3536e1fa-0850-44d1-b123-925ce12476cf
+  udp: true
+  tls: true
+  servername: dey.lnmarketplace.net
+  sni: dey.lnmarketplace.net
+  skip-cert-verify: false
+  alpn:
+  - h2
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /kavir
+    host: dey.lnmarketplace.net
+    mode: stream-one
 - name: 🇱🇻 拉脱维亚 | LVA
   server: 2.26.88.140
   port: 4443
@@ -416,32 +413,32 @@ proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
+  - 🇭🇰HK香港 (4)
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG
+  - 🇯🇵 日本 | JPN
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
   - 🇷🇺 俄罗斯 | RUS 4
+  - 🇩🇪DE德国丨yoyapai.com (37)
   - 🇩🇪DE德国丨yoyapai.com
   - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
   - 🇮🇹IT意大利丨yoyapai.com (3)
-  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇮🇹 意大利 | ITA 6
+  - 🇱🇻LV拉脱维亚丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
   - 🇮🇹 意大利 | ITA
   - 🇷🇺 俄罗斯 | RUS 5
   - 🇮🇹 意大利 | ITA 5
   - 🇹🇭 泰国 | THA 2
-  - 🇳🇱 荷兰 | NLD 6
-  - 🇫🇷 法国 | FRA
   - 🇹🇭 泰国 | THA
   - 🇱🇻 拉脱维亚 | LVA 2
   - 🇩🇪 德国 | DEU
+  - ❓未知丨yoyapai.com (21)
   - 🇱🇻 拉脱维亚 | LVA
   - 🇩🇪DE德国丨yoyapai.com (12)
   - ❓未知丨yoyapai.com (6)
@@ -455,18 +452,14 @@ proxy-groups:
 - name: HK-POOL
   type: url-test
   proxies:
+  - 🇭🇰HK香港 (4)
   - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 2
-  - 🇭🇰 香港 | HKG
-  - 🇺🇸 美国 | USA 8
-  - 🇺🇸 美国 | USA 6
-  - 🇺🇸 美国 | USA 3
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -475,7 +468,6 @@ proxy-groups:
   - 🇺🇸 美国 | USA 8
   - 🇺🇸 美国 | USA 6
   - 🇺🇸 美国 | USA 3
-  - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
   - 🇺🇸 美国 | USA 2
@@ -484,12 +476,12 @@ proxy-groups:
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🇮🇹 意大利 | ITA 4
-  - 🇮🇹 意大利 | ITA 7
-  - 🇮🇹 意大利 | ITA 3
+  - 🇩🇪DE德国丨yoyapai.com (12)
   - 🇮🇹IT意大利丨yoyapai.com (3)
-  - ❓未知丨yoyapai.com (6)
-  - 🇳🇱 荷兰 | NLD 6
+  - 🇮🇹 意大利 | ITA 5
+  - 🇩🇪DE德国丨yoyapai.com
+  - 🇮🇹 意大利 | ITA 6
+  - 🇮🇹 意大利 | ITA 7
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
