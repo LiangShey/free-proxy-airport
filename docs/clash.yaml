@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-21T15:46:40.448783+00:00'
+generated-at: '2026-11-21T21:19:41.134825+00:00'
 proxies:
 - name: 🇭🇰 香港 | HKG 2
   server: 47.242.81.94
@@ -129,6 +129,21 @@ proxies:
     path:
     - /3x
   udp: true
+- name: 🇺🇸 美国 | USA 7
+  server: 107.174.133.115
+  port: 52080
+  type: vmess
+  uuid: e7fb8bc6-5e0a-4e64-86cc-eb0ddd7ef4dd
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /QQqun-737805443
+  udp: true
 - name: 🇺🇸 美国 | USA 4
   server: 31.59.154.82
   port: 8459
@@ -180,21 +195,6 @@ proxies:
     grpc-mode: gun
     grpc-service-name: 99f2107b03f8
   udp: true
-- name: 🇺🇸 美国 | USA 10
-  server: 192.74.236.148
-  port: 30004
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /path/1733477783705
-    headers:
-      Host: www.91334565.xyz
-  udp: true
 - name: 🇺🇸 美国 | USA 12
   server: d1eyz.xiaoyan.io
   port: 16648
@@ -228,6 +228,14 @@ proxies:
     headers:
       Host: o685y.save-node.com
   udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: 152.53.120.90
+  port: 50955
+  type: vless
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+  tls: false
+  network: tcp
+  udp: true
 - name: 🇳🇬 尼日利亚 | NGA
   server: sclass-00.catcat321.com
   port: 20103
@@ -236,6 +244,13 @@ proxies:
   sni: hk.catxstar.com
   skip-cert-verify: true
   udp: true
+- name: 🇮🇹 意大利 | ITA 8
+  server: 202.50.253.90
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇮🇹 意大利 | ITA 2
   server: 202.50.253.27
   port: 19999
@@ -243,8 +258,8 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇮🇹 意大利 | ITA 8
-  server: 202.50.253.90
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.54
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -262,13 +277,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.54
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇨🇳 CN_39
   server: sclass-01.catcat321.com
@@ -337,6 +345,15 @@ proxies:
   auth: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: true
+- type: ss
+  name: 🇮🇹IT意大利丨yoyapai.com
+  server: 202.50.253.45
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+  udp: true
+  tls: false
+  skip-cert-verify: false
 - name: 🇩🇪 德国 | DEU 3
   server: 193.160.208.240
   port: 443
@@ -350,15 +367,6 @@ proxies:
     path: /assets/twru01/
     mode: auto
   udp: true
-- type: ss
-  name: 🇮🇹IT意大利丨yoyapai.com
-  server: 202.50.253.45
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-  udp: true
-  tls: false
-  skip-cert-verify: false
 - name: 🇮🇹 意大利 | ITA
   server: 202.50.253.18
   port: 19999
@@ -380,29 +388,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇰🇿 哈萨克斯坦 | KAZ
-  server: 185.102.75.145
-  port: 777
-  type: hysteria2
-  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  auth: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  sni: fin5.cft-razor.online
-  skip-cert-verify: true
-- name: 🇩🇪 德国 | DEU 4
-  server: mamad.ang-el.ir
-  port: 2085
-  type: vless
-  uuid: fbe735da-3a62-4b98-844b-8db9e2ebaf95
-  tls: true
-  servername: angelvpn.angelmh.cv
-  client-fingerprint: chrome
-  network: xhttp
-  xhttp-opts:
-    path: /api
-    host: community.fastly.steamstatic.com
-    mode: stream-one
-    x-padding-bytes: 100-1000
-  udp: true
 - name: 🇬🇧 英国 | GBR 2
   server: 136.148.83.69
   port: 443
@@ -423,23 +408,6 @@ proxies:
   ws-opts:
     path: /vless-kulo
   udp: true
-- name: 🇮🇩 印尼 | IDN
-  server: afzuv.xiaoyan.io
-  port: 16616
-  type: vmess
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  alterId: 0
-  cipher: auto
-  tls: false
-  alpn:
-  - ''
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-  udp: true
 - name: 🇳🇱 荷兰 | NLD 2
   server: 48.102.173.24
   port: 444
@@ -453,20 +421,6 @@ proxies:
     path: /stream/updates/a66d7902
     headers:
       Host: neplay603.gangtype.com
-  udp: true
-- name: 🇳🇱 荷兰 | NLD 3
-  server: 48.102.205.89
-  port: 22444
-  type: vless
-  uuid: a9ff24d3-f308-4e72-acb9-a76062583837
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: T1BWBw3lq9G1LiQ7eQSPfdNQic7bUMEbdFNJBewAwB8
-    short-id: 6ad3c0f1e9b2478a
-  servername: fontanka.ru
-  client-fingerprint: firefox
-  network: tcp
   udp: true
 - name: 🇬🇧 英国 | GBR
   server: 136.148.83.69
@@ -503,36 +457,33 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 2
   - 🇳🇬 尼日利亚 | NGA
-  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 8
-  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇮🇹 意大利 | ITA 2
   - 🇮🇹 意大利 | ITA 4
+  - 🇷🇺 俄罗斯 | RUS 2
   - 🇨🇳 CN_39
   - 🇳🇱 荷兰 | NLD 4
   - 🇳🇱 荷兰 | NLD
   - 🇷🇺 俄罗斯 | RUS 3
   - 🇮🇹 意大利 | ITA 6
   - 🇷🇺 俄罗斯 | RUS
-  - 🇩🇪 德国 | DEU 3
   - 🇮🇹IT意大利丨yoyapai.com
+  - 🇩🇪 德国 | DEU 3
   - 🇮🇹 意大利 | ITA
   - 🇮🇹 意大利 | ITA 5
   - 🇮🇹 意大利 | ITA 9
-  - 🇰🇿 哈萨克斯坦 | KAZ
-  - 🇩🇪 德国 | DEU 4
   - 🇬🇧 英国 | GBR 2
   - 🇫🇷 法国 | FRA
-  - 🇮🇩 印尼 | IDN
   - 🇳🇱 荷兰 | NLD 2
-  - 🇳🇱 荷兰 | NLD 3
   - 🇬🇧 英国 | GBR
   - 🇮🇹 意大利 | ITA 3
   - 🇮🇹 意大利 | ITA 7
@@ -558,11 +509,11 @@ proxy-groups:
   - 🇺🇸 美国 | USA 11
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇺🇸 美国 | USA 7
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 5
   - 🇺🇸 美国 | USA
-  - 🇺🇸 美国 | USA 10
   - 🇺🇸 美国 | USA 12
   - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
@@ -572,12 +523,11 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 | USA 9
   - 🇺🇸 美国 | USA 8
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹 意大利 | ITA 5
+  - 🇮🇹 意大利 | ITA 4
   - 🇮🇹 意大利 | ITA 2
-  - 🇺🇸 美国 | USA 10
-  - 🇫🇷 法国 | FRA
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇹 意大利 | ITA 6
-  - 🇭🇰 香港 | HKG 2
+  - 🇮🇹 意大利 | ITA 8
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
