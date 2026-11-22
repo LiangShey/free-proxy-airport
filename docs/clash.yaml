@@ -7,36 +7,36 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: free-proxy-airport-v7
-generated-at: '2026-11-22T16:32:39.267866+00:00'
+generated-at: '2026-11-22T22:15:14.936985+00:00'
 proxies:
-- name: 🇭🇰 香港 | HKG 3
+- name: 🇭🇰 香港 | HKG 2
   server: 116.213.43.43
-  port: 11107
+  port: 11106
   type: vless
-  uuid: 08a37d1f-7bf1-4b5d-a2ec-5ced6a633d7f
+  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
   tls: true
   flow: xtls-rprx-vision
   reality-opts:
-    public-key: 6GRzkPbs12fKBdBBFzs5dmtmbSHCXMngUCBKLrXYm3U
-    short-id: e2ccd8eedcbee2ce
+    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
+    short-id: da12e31124830d42
   servername: www.apple.com
   client-fingerprint: chrome
   network: tcp
   udp: true
-- name: 🇯🇵 日本 | JPN 3
-  server: nb5rb.hikigo.com
+- name: 🇸🇬 新加坡 | SGP 5
+  server: bgsg2.hikigo.com
   port: 443
   type: hysteria2
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: nb5rb.hikigo.com
+  sni: bgsg2.hikigo.com
   up: 100
   down: 200
   skip-cert-verify: true
   alpn:
   - h3
   obfs: salamander
-  obfs-password: yhlbhcysaba0wtn1
+  obfs-password: sj1awrdwnn5lbuno
   udp: true
 - name: 🇸🇬 新加坡 | SGP 6
   server: bgsg1.hikigo.com
@@ -45,6 +45,21 @@ proxies:
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
   sni: bgsg1.hikigo.com
   skip-cert-verify: true
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: dg3rb.ianai.it.com
+  port: 443
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: dg3rb.ianai.it.com
+  up: 100
+  down: 200
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: e3ymhs6gbzptjysj
   udp: true
 - name: 🇸🇬 新加坡 | SGP 4
   server: hkzfsg2.mateflora.com
@@ -90,19 +105,20 @@ proxies:
   sni: a2dgus.supertoolify.com
   skip-cert-verify: true
   udp: true
-- name: 🇺🇸 美国 | USA
-  server: vless.cloudxzw2027.ccwu.cc
-  port: 443
-  type: vless
-  uuid: 2f12e5b5-6ce7-47ab-88b9-6110c1a3fc60
-  tls: true
-  servername: vless.cloudxzw2027.ccwu.cc
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /xzw
-    headers:
-      Host: vless.cloudxzw2027.ccwu.cc
+- name: 🇺🇸 美国 | USA 2
+  server: a3dgus.supertoolify.com
+  port: 40055
+  type: hysteria2
+  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  sni: psstatic.cdn.bcebos.com
+  up: 100
+  down: 200
+  skip-cert-verify: true
+  alpn:
+  - h3
+  obfs: salamander
+  obfs-password: re61ep4ancwplwh8
   udp: true
 - name: 🇩🇪 德国 | DEU 2
   server: 92.5.156.71
@@ -150,6 +166,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
+- name: 🇮🇹 意大利 | ITA 4
+  server: 202.50.253.36
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
 - name: 🇷🇺 俄罗斯 | RUS 2
   server: 201.51.12.98
   port: 443
@@ -163,8 +186,24 @@ proxies:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   udp: true
-- name: 🇮🇹 意大利 | ITA 4
-  server: 202.50.253.36
+- name: 🇳🇱 荷兰 | NLD
+  server: 196.196.148.63
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 204adda7e3da
+  udp: true
+- name: 🇮🇹 意大利 | ITA 6
+  server: 202.50.253.27
   port: 19999
   type: ss
   cipher: aes-256-gcm
@@ -182,13 +221,6 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  udp: true
-- name: 🇮🇹 意大利 | ITA 6
-  server: 202.50.253.27
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - type: ss
   name: 🇮🇹IT意大利丨yoyapai.com (4)
@@ -216,21 +248,6 @@ proxies:
   tls: false
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 15
-  server: du5g.altheora.ir
-  port: 27181
-  type: vless
-  uuid: 5c683113-0abe-4d0b-aad9-0f198186b45a
-  tls: true
-  encryption: mlkem768x25519plus.native.0rtt.F5LiR4Hs6W_x17I2LmxdFA8MUGvpHSaVuZ4zxTCAkmI
-  servername: login.zanjanphone.ir
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /user
-    headers:
-      Host: login.zanjanphone.ir
-  udp: true
 - name: 🇵🇱 波兰 | POL
   server: 191.217.253.12
   port: 443
@@ -245,20 +262,12 @@ proxies:
   client-fingerprint: firefox
   network: tcp
   udp: true
-- name: 🇩🇪 德国 | DEU 6
-  server: dga1de.mateflora.com
-  port: 40120
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: psstatic.cdn.bcebos.com
-  up: 100
-  down: 200
-  skip-cert-verify: true
-  alpn:
-  - h3
-  obfs: salamander
-  obfs-password: pz7lyeav76a5wqzb
+- name: 🇮🇹 意大利 | ITA
+  server: 202.50.253.63
+  port: 19999
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇩🇪 德国 | DEU 8
   server: a3de.supertoolify.com
@@ -274,13 +283,6 @@ proxies:
   - h3
   obfs: salamander
   obfs-password: ivnbamaxvp0dqblk
-  udp: true
-- name: 🇮🇹 意大利 | ITA
-  server: 202.50.253.63
-  port: 19999
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 - name: 🇹🇼 🇨🇳 台湾 | TWN 2
   server: 161.114.15.215
@@ -374,50 +376,34 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
-- name: 🇳🇱 荷兰 | NLD 5
-  server: 31.177.111.136
-  port: 443
-  type: vless
-  uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
-  tls: true
-  alpn:
-  - h2
-  servername: q075gi2cms.schoolbag.top
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /collector/runtime/channel/open
-    headers:
-      Host: q075gi2cms.schoolbag.top
-  udp: true
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 3
-  - 🇯🇵 日本 | JPN 3
+  - 🇭🇰 香港 | HKG 2
+  - 🇸🇬 新加坡 | SGP 5
   - 🇸🇬 新加坡 | SGP 6
+  - 🇯🇵 日本 | JPN
   - 🇸🇬 新加坡 | SGP 4
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
   - 🇩🇪 德国 | DEU 2
   - 🇷🇺 俄罗斯 | RUS 4
   - 🇰🇷 韩国 | KOR 2
   - 🇮🇹 意大利 | ITA 2
-  - 🇷🇺 俄罗斯 | RUS 2
   - 🇮🇹 意大利 | ITA 4
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇷🇺 俄罗斯 | RUS 2
+  - 🇳🇱 荷兰 | NLD
   - 🇮🇹 意大利 | ITA 6
+  - 🇷🇺 俄罗斯 | RUS
   - 🇮🇹IT意大利丨yoyapai.com (4)
   - 🇮🇹IT意大利丨yoyapai.com
   - 🇩🇪 德国 | DEU 5
-  - 🇩🇪 德国 | DEU 15
   - 🇵🇱 波兰 | POL
-  - 🇩🇪 德国 | DEU 6
-  - 🇩🇪 德国 | DEU 8
   - 🇮🇹 意大利 | ITA
+  - 🇩🇪 德国 | DEU 8
   - 🇹🇼 🇨🇳 台湾 | TWN 2
   - 🇩🇪 德国 | DEU 14
   - 🇮🇹 意大利 | ITA 5
@@ -427,19 +413,18 @@ proxy-groups:
   - 🇩🇪 德国 | DEU
   - 🇬🇧 英国 | GBR
   - 🇮🇹 意大利 | ITA 3
-  - 🇳🇱 荷兰 | NLD 5
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: HK-POOL
   type: url-test
   proxies:
-  - 🇭🇰 香港 | HKG 3
+  - 🇭🇰 香港 | HKG 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: JP-POOL
   type: url-test
   proxies:
-  - 🇯🇵 日本 | JPN 3
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: US-POOL
@@ -448,18 +433,18 @@ proxy-groups:
   - 🇺🇸 美国 | USA 3
   - 🇺🇸 美国 | USA 4
   - 🇺🇸 美国 | USA 5
-  - 🇺🇸 美国 | USA
+  - 🇺🇸 美国 | USA 2
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: AI-POOL
   type: url-test
   proxies:
   - 🇩🇪 德国 | DEU 5
-  - 🇺🇸 美国 | USA 5
-  - 🇮🇹 意大利 | ITA 3
-  - 🇵🇱 波兰 | POL
-  - 🇰🇷 韩国 | KOR 2
-  - 🇷🇺 俄罗斯 | RUS
+  - 🇮🇹 意大利 | ITA 6
+  - 🇺🇸 美国 | USA 3
+  - ❓未知丨yoyapai.com (3)
+  - 🇮🇹IT意大利丨yoyapai.com
+  - 🇮🇹 意大利 | ITA 4
   url: http://www.gstatic.com/generate_204
   interval: 120
 - name: FALLBACK
